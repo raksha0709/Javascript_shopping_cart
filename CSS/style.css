@@ -1,38 +1,68 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;1,300&display=swap" );
-*{
-   margin: 0;
-   padding: 0;
-   box-sizing: border-box;
-   font-family: 'Courier New', Courier, monospace;
+@import url('https://fonts.googleapis.com/css2?family=Bacasime+Antique&family=Dancing+Script:wght@700&display=swap');
 
-}
-nav{
-    display:flex;
-    justify-content: space-between;
-    height:80px;
-    background-color: aqua;
-    padding:7px 50px;
-}
-nav h2,i{
-    padding-top: 22px;
-}
-.heading{
-    text-align: center;
-    margin-top:35px;
-}
-.item{
-    width:500px;
-    border: 2px solid brown;
-    margin: 4px 4px;
-    text-align:center;
-
-}
-.item img{
-    position:relative;
-    left:27px;
-}
-section{
+.navbar {
+    color: brown;
+    border: silver;
+    font-size: large;
+    position: fixed;
+    background-color: palevioletred;
+    width: 100%;
     display: flex;
-    flex-wrap:wrap;
-    margin-left:140px;
+    justify-content: space-between;
+    padding: 15px 0;
+    margin: 0;
+}
+
+.navbar a {
+    margin-left: 20px;
+}
+
+.navbar i {
+    margin-right: 20px;
+}
+
+#shop-product{
+    color: blue;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bolder;
+    font-family: 'Dancing Script', cursive;
+    text-decoration: underline;
+}
+*{
+    font-family: 'Bacasime Antique', serif;
+}
+
+.product-container-1 {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 100px;
+}
+
+.product-1 {
+    margin: 10px;
+    border: 2px solid;
+    width: 17%;
+    height: 400px;
+}
+
+.product-1 img {
+    width: 100%;
+    height: 55%;
+}
+
+.product-1 span{
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+.product-1 h2{
+    margin: 10px;
+}
+.product-1 button{
+    border-radius: 25%;
+    background-color: crimson;
+    color: white;
+    font-size: large;
 }

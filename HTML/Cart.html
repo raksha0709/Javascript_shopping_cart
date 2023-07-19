@@ -2,47 +2,75 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons,min.css">
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-    <title>Cart</title>
+    <title>Order-Now</title>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <style>
+      .card.product-1{
+        height: 80%;
+      }
+      .card.product-1 img {
+        height: 50%;
+      }
+      .row-eq-height {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      .row-eq-height .card {
+        width: 100%;
+      }
+      
+      .row-eq-height .card .card-body {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+      #Wid{
+        width: 30%;
+        text-align: center;
+      }
+
+    </style>
 </head>
+
 <body>
     <div class="container">
-        <div class="row">
-            <div class="col-md-10 text-center text-white p-1 ">
-                <h2>Your shopping place</h2>
+        <div class="row align-items-center">
+            <div class="col-md-10 text-center p-1 text-danger">
+                <h2><u>My Shopping Cart</u></h2>
             </div>
-            <div class="col-md-2 text-left text-light p-4">
-                <a href="../HTML/home.html">Home &#xf030;</a>
-               
+            <div class="col-md-2 text-left text-danger p-4">
+                <i class="bx bx-exit"></i>
+                <a href="./Home.html" class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Home</a>
             </div>
         </div>
     </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-3 p-4">
-                 <div class="card"> 
-                        <img src="../Images/code_pouch.jfif" class="card-img-top">
-                    </div>
-                    <div class="card-body input1"> 
-                        <h5 class="card-title">wine bag</h5>
-                        <div class="cart-price">560rs</div>
-                            <input type="number" class="cart-quantity" >
-                    </div>
-                   <div class="total">
-                    <h6>total amount in rs:</h6>
-                    <input type="value">
-                </div>
-                <div class="order now">
-                    <button >order now</button>
-                </div>
+    <br>
+    <br>
+    <br>
 
-                   
-                </div>
+    <div class="container">
+        <div class="row row-eq-height" id="produt">
+            
+        </div>
+    </div>
+
+    <div class="container" id="Wid">
+        <div class="row" >
+            <div class="col-md-12 text-center bg-dark ">
+                <h3 class="text-info">Total: <span id="total"></span></h3>
+                <button id="orderButton" class="btn btn-primary" onclick="Order()">Order Now</button>
+                <p class="text-info" id="emptyCartMsg" style="display: none;">Your cart is empty.</p>
             </div>
         </div>
-        <script rel="js" src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    </div>
+    <br>
+    <br>
+
+    <script src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../JS/Script.js" defer></script>
 </body>
 </html>

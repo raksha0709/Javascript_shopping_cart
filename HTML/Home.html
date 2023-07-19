@@ -2,233 +2,123 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <!-- css -->
-    <link rel="stylesheet" href="../CSS/style.css">
-    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
-    <!-- Box Icon -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../CSS/style.css">
 </head>
-
 <body>
-      
-    <div class="container">
-        <div class="row">
-         <div class="col-md-12 text-center p-4">
-             <h2 style="background-color:salmon; color: blueviolet;font: bold;"> Your Shopping Store</h2>
-         </div>
-        
-             <i class="bag shopping"></i>
-         </div>
-          
-         <div class="col-md-2 text-left text-white p-4">
-           <a href="./Cart.html" class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Add To Cart </a>
-           
-           
-       <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-       </div>
-        </div> 
-     
+    <!--Header-->
+    <header>
+        <nav class="navbar">
+            <a href="" >Shopping Cart</a>
+            <a href="./Cart.html"><i class='bx bxs-cart' ></i></a> 
+        </nav>
+    </header>
 
-     <div class="container border-5 border-outline-warning mt-4">
-        <div class="row">
-          <div class="col-md-3 p-3">
-              <img src="../Images/bag_clg..jfif" length="200px" width="200px">
-              <h3 style="color: black;"> School bag</h3>
-              <span>₹559</span>
-              <br>
-              <div class="btn-group">
-              <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-              <script>
-                  function ButtonClicked() {
-                    alert('continue buying');
-      
-                  }
-                  function buttonClicked(){
-                      alert('added to cart');
-                  }
-                </script>
-               <button onclick="ButtonClicked()" type="submit" style=" color: black;">BUY NOW</button> 
-               
-                     <button onclick="buttonClicked()" type="submit" style="background-color: pink;">ADD TO CART</button>
-             
-              </div>
-          </div>
-         
-          <div class="col-md-3 p-3 bg-light text-black text">
-              <img src="../Images/bag_clg2.jfif" length="200px" width="200px">
-              <h3 style="color: black;"> Fancy bag</h3>
-              <span>₹799</span>
-              <br>
-              <div class="btn-group">
-                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-                <script>
-                    function ButtonClicked() {
-                      alert('continue buying');
-        
-                    }
-                    function buttonClicked(){
-                        alert('added to cart');
-                    }
-                  </script>
-                 <button onclick="ButtonClicked()" type="submit" style=" color: black;">BUY NOW</button> 
-                 
-                       <button onclick="buttonClicked()" type="submit" style="background-color: pink;">ADD TO CART</button>
-               
-                </div>
-            </div>  
-            <div class="col-md-3 p-3">
-                <img src="../Images/bottle_3.jfif" length="200px" width="200px">
-                <h3 style="color: black;"> stylish 3 bottles</h3>
-                <span>₹299</span>
-                <br>
-               
-                <div class="btn-group">
-                <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-                <script>
-                    function ButtonClicked() {
-                      alert('continue buying');
-        
-                    }
-                    function buttonClicked(){
-                        alert('added to cart');
-                    }
-                  </script>
-                  <button onclick="ButtonClicked()" type="submit" style=" color: black;">BUY NOW</button> 
-             
-                  <button onclick="buttonClicked()" type="submit" style="background-color: pink;">ADD TO CART</button>
-          
-           </div>
-       </div> 
-       <div class="col-md-3 p-3">
-           <img src="../Images/bottle_clg.jfif" length="200px" width="200px">
-           <h3> White bottle</h3>
-           <span>₹349</span>
-           <br>
-           <div class="btn-group">
-           <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-           <script>
-               function ButtonClicked() {
-                 alert('continue buying');
-   
-               }
-               function buttonClicked(){
-                   alert('added to cart');
-               }
-             </script>
-            <button onclick="ButtonClicked()" type="submit" style=" color: black;">BUY NOW</button> 
-            
-                  <button onclick="buttonClicked()" type="submit" style="background-color: pink;">ADD TO CART</button>
-          
-                  
-           </button>
-         </div>
-      </div>
-    </div>
-   </div>
-<br>
-
-<div class="container border-5 border-outline-warning mt-4">
-  <div class="row">
-    <div class="col-md-3 p-3">
-        <img src="../Images/code_pouch.jfif" length="200px" width="200px">
-        <h3 style="color: black;"> Pouch binary symbols</h3>
-        <span>₹569</span>
-        <br>
-        <div class="btn-group">
-        <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-        <script>
-           function ButtonClicked() {
-             alert('continue buying');
-
-           }
-           function buttonClicked(){
-               alert('added to cart');
-           }
-         </script>
-        <button onclick="ButtonClicked()" type="submit" style=" color: black;">BUY NOW</button> 
-        
-              <button onclick="buttonClicked()" type="submit" style="background-color: pink;">ADD TO CART</button>
-      
+    <!--item section-->
+    <section>
+        <div>
+            <br><br><br>
+            <h2 id="shop-product">Shopping Products</h2>
         </div>
-    </div>
-   
-    <div class="col-md-3 p-3 bg-light text-black text">
-        <img src="../Images/code_tshirst.jfif" length="200px" width="200px">
-        <h3 style="color: black;"> Coding T-Shirt</h3>
-        <span>₹1299</span>
-        <br>
-        <div class="btn-group">
-        <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-        <script>
-           function ButtonClicked() {
-             alert('continue buying');
-
-           }
-           function buttonClicked(){
-               alert('added to cart');
-           }
-         </script>
-        <button onclick="ButtonClicked()" type="submit" style=" color: black;">BUY NOW</button> 
-        
-              <button onclick="buttonClicked()" type="submit" style="background-color: pink;">ADD TO CART</button>
-      
+        <div class="product-container-1">
+        <div class="product-1">
+            <img src="../Images/bag_clg..jfif" alt="Loading">
+            <h2>College Bag </h2>
+            <p>Girls college Bag</p>
+            <span>₹1999</span>
+            <button type="button" onclick="addToCart('college bag', 'bag_clg', 1999)">Add</button>
+            <i class='bx bxs-cart-alt'></i>
         </div>
-    </div>  
-    <div class="col-md-3 p-3">
-        <img src="../Images/coffee.jfif" length="200px" width="200px">
-        <h3 style="color: black;"> Coffee mug</h3>
-        <span>₹399</span>
-        <br>
-        <div class="btn-group">
-        <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-        <script>
-           function ButtonClicked() {
-             alert('continue buying');
 
-           }
-           function buttonClicked(){
-               alert('added to cart');
-           }
-         </script>
-        <button onclick="ButtonClicked()" type="submit" style=" color: black;">BUY NOW</button> 
-        
-              <button onclick="buttonClicked()" type="submit" style="background-color: pink;">ADD TO CART</button>
-      
+        <div class="product-1">
+            <img src="../Images/bag_clg2.jfif" alt="Loading">
+            <h2>Stylish Bag</h2>
+            <p>Stylish Carry Bag</p>
+            <span>₹999</span>
+            <button type="button" onclick="addToCart('bag', 'bag_clg2', 999)">Add</button>
+            <i class='bx bxs-cart-alt'></i>
         </div>
-    </div> 
-    <div class="col-md-3 p-3">
-        <img src="../Images/git_cup.jfif" length="200px" width="200px">
-        <h3 style="color: black;"> Cup with gitdesign</h3>
-        <span style="color: #000;">₹599</span>
-        <br>
-        <div class="btn-group">
-        <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-        <script>
-           function ButtonClicked() {
-             alert('continue buying');
 
-           }
-           function buttonClicked(){
-               alert('added to cart');
-           }
-         </script>
-        <button onclick="ButtonClicked()" type="submit" style=" color: black;">BUY NOW</button> 
-        
-              <button onclick="buttonClicked()" type="submit" style="background-color: pink;">ADD TO CART</button>       
-        </button>
-        
-      </div>
-   </div>
- </div>
-</div>
+        <div class="product-1">
+            <img src="../Images/bottle_3.jfif" alt="Loading">
+            <h2>Three Bottles</h2>
+            <p>Buy two get one free</p>
+            <span>₹239</span>
+            <button type="button" onclick="addToCart('Three bottles', 'bottle_3', 239)">Add</button>
+            <i class='bx bxs-cart-alt'></i>
+        </div>
 
-      <br>
-      <script rel="js" src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+        <div class="product-1">
+            <img src="../Images/bottle_clg.jfif" alt="Loading">
+            <h2>Metal Bottle </h2>
+            <p>White Metal Bottle </p>
+            <span>₹199</span>
+            <button type="button" onclick="addToCart('Metal Bottle', 'bottle_clg', 199)">Add</button>
+            <i class='bx bxs-cart-alt'></i>
+        </div>
+
+        <div class="product-1">
+            <img src="../Images/code_pouch.jfif" alt="Loading">
+            <h2>Stationary pouch</h2>
+            <p>Stationary carry pouch</p>
+            <span>₹349</span>
+            <button type="button" onclick="addToCart('Pouch', 'code_pouch', 349)">Add</button>
+            <i class='bx bxs-cart-alt'></i>
+        </div>
+        <div class="product-1">
+            <img src="../Images/code_tshirst.jfif" alt="Loading">
+            <h2>code T-shirt</h2>
+            <p>Coding printed T-shirt</p>
+            <span>₹949</span>
+            <button type="button" onclick="addToCart('Code T-shirt', 'code_tshirst', 949)">Add</button>
+            <i class='bx bxs-cart-alt'></i>
+        </div>
+
+        <div class="product-1">
+            <img src="../Images/coffee.jfif" alt="Loading">
+            <h2>Coffee Cup</h2>
+            <p>White coffee cup</p>
+            <span>₹459</span>
+            <button type="button" onclick="addToCart('coffee cup', 'coffee', 459)">Add</button>
+            <i class='bx bxs-cart-alt'></i>
+        </div>
+
+        <div class="product-1">
+            <img src="../Images/git_cup.jfif" alt="Loading">
+            <h2>Stylish Cup</h2>
+            <p>Github cup</p>
+            <span>₹249</span>
+            <button type="button" onclick="addToCart('Cup git design', 'git_cup', 249)">Add</button>
+            <i class='bx bxs-cart-alt'></i>
+        </div>
+
+        <div class="product-1">
+            <img src="../Images/tshirst_q.jfif" alt="Loading">
+            <h2>Qoute T-shirt</h2>
+            <p>Success T-shirt</p>
+            <span>₹1239</span>
+            <button type="button" onclick="addToCart('Qoute', 'tshirst_q', 1239)">Add</button>
+            <i class='bx bxs-cart-alt'></i>
+        </div >
+
+        <div class="product-1">
+            <img src="../Images/yellowshirt.jfif" alt="Loading">
+            <h2>Yellow T-shirt</h2>
+            <p>Plain yellow T-shirt</p>
+            <span>₹799</span>
+            <button type="button" onclick="addToCart('Yellow T-shirt', 'yellowshirt', 799)">Add</button>
+            <i class='bx bxs-cart-alt'></i>
+        </div>
+        </div>
+
+    </section>
+
+    <script src="..//bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../JS/Script.js">
+        
+    </script>
 </body>
 </html>
-
-    
-    
